@@ -13,9 +13,9 @@ async function scrapeTable() {
   const response = await fetch(url);
   const html = await response.text();
   const $ = cheerio.load(html);
-  const title = $("#countries").text();
-  const table = $("#main_table_countries");
-  const header = table.find("thead tr");
+  const title = $("YourTitle").text();
+  const table = $("table");
+  const header = table.find("tbody tr");
   const headers = [];
   header.find("th").each((i, element) => {
     headers.push(
