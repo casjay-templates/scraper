@@ -2,7 +2,7 @@ require("dotenv").config();
 const fetch = require("node-fetch");
 const cheerio = require("cheerio");
 
-const url = "process.env.URL";
+const url = process.env.URL;
 let cache = null;
 let lastCacheTime = null;
 
