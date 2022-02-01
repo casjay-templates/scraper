@@ -113,3 +113,5 @@ temp/
 
 # End of https://www.gitignore.io/api/node
 
+# ignore commit message
+.gitcommit
